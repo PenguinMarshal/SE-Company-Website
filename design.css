@@ -1,0 +1,232 @@
+/* Global Styles */
+html, body {
+    height: 100%; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    background-color: #8ddbe0;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Header Styles */
+header {
+    background-color: #8ddbe0;
+    color: #090909;
+    padding: 20px;
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8ddbe0; 
+    padding: 10px 0;
+    border-top: 3px solid #090909; 
+    border-bottom: 3px solid #090909; 
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 40px; 
+}
+
+.navbar .logo-container h1 {
+    font-size: 36px;
+    color: #090909;
+    margin: 0;
+    margin-right: 20px; 
+}
+
+.navbar .logo-container img {
+    max-width: 150px;
+}
+
+/* Navigation Links Styles */
+.navbar li {
+    display: inline-block;
+    position: relative;
+    margin-right: 25px;
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+/* Navigation Links Styles */
+.navbar a {
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #d3ffe9; 
+    color: #090909;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.navbar a:hover {
+    background-color: #9ca074; 
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+/* Dropdown Styles */
+.navbar li ul {
+    display: none; 
+    position: absolute; 
+    background-color: #d3ffe9; 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1;
+    min-width: 160px; 
+}
+
+.navbar li ul li {
+    display: block; 
+    margin: 0; 
+}
+
+.navbar li ul li a {
+    padding: 12px 16px; 
+    background-color: #d3ffe9; 
+    color: #090909; 
+    display: block;
+    text-align: left; 
+}
+
+.navbar li ul li a:hover {
+    background-color: #9ca074; 
+}
+
+.navbar li:hover ul {
+    display: block; 
+}
+
+/* Home Page Specific Styles */
+body.homepage {
+    text-align: center; 
+}
+
+.header.homepage .logo-container {
+    margin-top: 20px; 
+}
+
+.header.homepage h2 {
+    font-size: 32px;
+    color: #090909;
+    margin-top: 50px; 
+}
+
+/* Project Page Specific Styles */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.project-box {
+    display: flex;
+    align-items: center;
+    background-color: #eb9f49; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 50%; 
+}
+
+.project-image {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+.project-description {
+    flex: 2;
+}
+
+.project-description h3 {
+    margin-top: 0;
+}
+
+.project-description p {
+    margin: 10px 0;
+}
+
+.project-description a {
+    text-decoration: none;
+    color: #0097fc; 
+}
+
+.project-description a:hover {
+    text-decoration: underline;
+}
+
+.project-box {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Centering Styles for About Page */
+.main-content.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 160px); 
+    text-align: center;
+}
+
+/* Centering Styles for Home Page */
+.homepage-content.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(75vh - 200px); 
+    text-align: center;
+    margin-top: 50px;
+}
+
+.homepage-content h2 {
+    margin: 0;
+    font-size: 46px;
+    color: #090909;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #8ddbe0;
+    color: #090909;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px solid #090909;
+    margin-top: auto; 
+}
+

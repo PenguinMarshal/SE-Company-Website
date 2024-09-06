@@ -5,7 +5,7 @@ html, body {
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 2;
     margin: 0;
     padding: 0;
@@ -68,25 +68,23 @@ nav {
     margin-right: 0;
 }
 
-/* Navigation Links Styles */
 .navbar a {
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 10px 20px;
     background-color: #d3ffe9; 
     color: #090909;
-    border: 1px solid #ddd; 
+    border: 3px solid #adadad; 
     border-radius: 8px; 
     transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .navbar a:hover {
-    background-color: #9ca074; 
+    background-color: #e0928d; 
     transform: scale(1.02);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-
-/* Dropdown Styles */
+/* Dropdown Menu Styles */
 .navbar li ul {
     display: none; 
     position: absolute; 
@@ -113,29 +111,59 @@ nav {
 }
 
 .navbar li ul li a:hover {
-    background-color: #9ca074; 
+    background-color: #e0928d; 
 }
 
 .navbar li:hover ul {
     display: block; 
 }
 
-/* Home Page Specific Styles */
+/* Home Page Styles */
 body.homepage {
     text-align: center; 
 }
 
-.header.homepage .logo-container {
+.homepage-content.centered {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: calc(75vh - 200px); 
+    text-align: center;
+    margin-top: 50px;
+}
+
+.homepage-content h2 {
+    margin: 0;
+    font-size: 40px;
+    color: #090909;
+}
+
+/* Log Links Styles */
+.log-links {
+    display: flex;
+    justify-content: center;
     margin-top: 20px; 
 }
 
-.header.homepage h2 {
-    font-size: 32px;
+.log-link {
+    margin: 0 15px;
+    padding: 20px 20px;
+    background-color: #d3ffe9; 
     color: #090909;
-    margin-top: 50px; 
+    border: 5px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-/* Project Page Specific Styles */
+.log-link:hover {
+    background-color: #f4f802;
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Page Styles */
 .project-container {
     display: flex;
     flex-direction: column;
@@ -202,22 +230,13 @@ body.homepage {
     align-items: center;
     height: calc(100vh - 160px); 
     text-align: center;
+    padding: 0 20px; 
 }
 
-/* Centering Styles for Home Page */
-.homepage-content.centered {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(75vh - 200px); 
-    text-align: center;
-    margin-top: 50px;
-}
-
-.homepage-content h2 {
-    margin: 0;
-    font-size: 46px;
+.main-content h2 {
+    font-size: 40px;
     color: #090909;
+    margin: 0;
 }
 
 /* Footer Styles */
